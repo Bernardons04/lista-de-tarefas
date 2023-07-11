@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto+Serif:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    background: #222435;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+*:focus {
+    outline: none;
+}
+
+h1 {
+    font-weight: 900;
+    color: white;
+}
+.content {
+    display: flex;
+    width: 600px;
+    height: 40px;
+    margin: 30px auto;
+    margin-bottom: 45px;
+    padding: 10px;
+}
+
+input {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    border: none;
+    padding-left: 30px;
+    background: #2d3046;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+
+.content button {
+    height: 62px;
+    width: 60px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #363b65;
+    color: white;
+}
+
+.listaTarefas {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 600px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #363b65;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.item:hover{
+    background: #151627;
+}
+
+.item span {
+    width: 100%;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-align: start;
+    font-size: 18px;
+}
+
+.itemCompleto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1f2e;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+.itemCompleto span {
+    text-align: start;
+    width: 100%;
+    color: #4d506e;
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.delete {
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    color: #4d506e;
+}
+
+.delete:hover {
+    background: rgb(228, 34, 34);
+    color: white;
+}
+.deleteAll {
+    border: 2px solid rgb(228, 34, 34);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    background: none;
+    color: rgb(228, 34, 34);
+    width: 600px;
+    font-size: 18px;
+}
+.deleteAll:hover {
+    background: rgb(228, 34, 34);
+    color: white;
+}
+
+.iconeCentral {
+    max-width: 90%;
+    width: 70%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .content{
+        width: 90%;
+    }
+
+    .content input {
+        height: 100%
+    }
+
+    .content button {
+        height:105%;
+        font-size: 13px;
+    }
+
+    .deleteAll {
+        width: 85%;
+    }
+    .listaTarefas {
+        width: 85%
+    }
+}
